@@ -1,6 +1,6 @@
 {
-  "name": "Big Day Countdown",
-  "short_name": "Big Day",
+  "name": "Marriage Countdown",
+  "short_name": "Marriage",
   "description": "Marriage Leave Countdown",
   "start_url": "./index.html",
   "display": "standalone",
