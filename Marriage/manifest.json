@@ -1,0 +1,17 @@
+{
+  "name": "Marriage Countdown",
+  "short_name": "Marriage",
+  "description": "Marriage Leave Countdown",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fdfcfb",
+  "theme_color": "#d4af37",
+  "icons": [
+    {
+      "src": "marriage_icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

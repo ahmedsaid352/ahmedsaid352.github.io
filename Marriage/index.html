@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دعوة زفاف | أحمد و نرمين</title>
+    <meta name="description" content="دعوة لحضور حفل زفاف أحمد سعيد فؤاد و نرمين وائل على - 22 مارس 2026">
+    <link rel="icon" href="marriage_icon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rakkas&family=Scheherazade+New:wght@400;700&family=Reem+Kufi:wght@400;700&family=Aref+Ruqaa:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-cream: #f5efe6;
+            --bg-warm: #f0e8db;
+            --sage: #9aab8e;
+            --sage-light: #c1ceaa;
+            --sage-dark: #7a8e6e;
+            --dusty-pink: #c9a09a;
+            --dusty-pink-light: #e0c4bf;
+            --dusty-pink-dark: #a87d77;
+            --text-main: #4a4340;
+            --text-soft: #6b6260;
+            --text-light: #8a7f7d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            font-family: 'Scheherazade New', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: var(--bg-cream);
+            overflow-x: hidden;
+            color: var(--text-main);
+            padding: 0.5rem;
+        }
+
+        /* ====== MAIN CARD ====== */
+        .invitation {
+            position: relative;
+            width: 100%;
+            max-width: 460px;
+            background: var(--bg-cream);
+            border-radius: 14px;
+            padding: 1.4rem 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(12px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ====== FLORAL BACKGROUND ROSES (scattered) ====== */
+        .bg-floral {
+            position: absolute;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .rose-1 {
+            top: 35%;
+            right: -8px;
+            width: 70px;
+            opacity: 0.12;
+            transform: rotate(-15deg);
+        }
+
+        .rose-2 {
+            top: 55%;
+            left: -10px;
+            width: 60px;
+            opacity: 0.10;
+            transform: rotate(20deg);
+        }
+
+        .rose-3 {
+            top: 75%;
+            right: 15px;
+            width: 45px;
+            opacity: 0.08;
+            transform: rotate(-30deg);
+        }
+
+        .rose-4 {
+            top: 15%;
+            left: 20px;
+            width: 40px;
+            opacity: 0.09;
+            transform: rotate(10deg);
+        }
+
+        .rose-5 {
+            bottom: 15%;
+            left: 50%;
+            width: 50px;
+            opacity: 0.07;
+            transform: translateX(-50%) rotate(45deg);
+        }
+
+        /* ====== BOTANICAL CORNERS ====== */
+        .botanical-tl,
+        .botanical-tr,
+        .botanical-bl,
+        .botanical-br {
+            position: absolute;
+            pointer-events: none;
+        }
+
+        .botanical-tl {
+            top: -8px;
+            left: -8px;
+            width: 120px;
+            height: 120px;
+            opacity: 0.55;
+        }
+
+        .botanical-tr {
+            top: -8px;
+            right: -8px;
+            width: 120px;
+            height: 120px;
+            opacity: 0.55;
+            transform: scaleX(-1);
+        }
+
+        .botanical-bl {
+            bottom: -8px;
+            left: -8px;
+            width: 100px;
+            height: 100px;
+            opacity: 0.45;
+            transform: scaleY(-1);
+        }
+
+        .botanical-br {
+            bottom: -8px;
+            right: -8px;
+            width: 100px;
+            height: 100px;
+            opacity: 0.45;
+            transform: scale(-1, -1);
+        }
+
+        /* ====== CONTENT ====== */
+        .dawah-title {
+            font-family: 'Rakkas', serif;
+            font-size: 2.8rem;
+            color: var(--dusty-pink-dark);
+            margin-bottom: 0.1rem;
+            line-height: 1.2;
+            position: relative;
+            z-index: 1;
+        }
+
+        .bismillah {
+            font-family: 'Reem Kufi', serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 0.4rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .intro-text {
+            font-size: 1rem;
+            color: var(--text-soft);
+            margin-bottom: 0.2rem;
+            line-height: 1.8;
+            position: relative;
+            z-index: 1;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin: 0.4rem 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .divider-line {
+            height: 1px;
+            width: 40px;
+            background: linear-gradient(90deg, transparent, var(--dusty-pink), transparent);
+        }
+
+        .divider-dot {
+            width: 5px;
+            height: 5px;
+            background: var(--dusty-pink);
+            border-radius: 50%;
+        }
+
+        /* ====== FAMILIES ====== */
+        .families-section {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 0.5rem 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .family {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .family-title {
+            font-family: 'Reem Kufi', serif;
+            font-size: 0.75rem;
+            color: var(--sage-dark);
+            margin-bottom: 0.15rem;
+            font-weight: 700;
+        }
+
+        .family-name {
+            font-family: 'Scheherazade New', serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--text-main);
+            line-height: 1.5;
+        }
+
+        .invite-line {
+            font-size: 1rem;
+            color: var(--text-soft);
+            margin: 0.4rem 0;
+            line-height: 1.6;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ====== COUPLE NAMES ====== */
+        .names-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.8rem;
+            margin: 0.5rem 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .couple-name {
+            font-family: 'Rakkas', serif;
+            font-size: 2.4rem;
+            color: var(--dusty-pink-dark);
+            line-height: 1.3;
+            flex: 1;
+            min-width: 0;
+        }
+
+        .couple-title {
+            font-family: 'Reem Kufi', serif;
+            font-size: 0.7rem;
+            color: var(--sage-dark);
+            font-weight: 700;
+            display: block;
+            margin-bottom: -0.1rem;
+        }
+
+        .ampersand {
+            font-family: 'Rakkas', serif;
+            font-size: 2.2rem;
+            color: var(--sage);
+            line-height: 1;
+        }
+
+        .mashia {
+            font-size: 0.95rem;
+            color: var(--text-soft);
+            margin: 0.3rem 0 0.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ====== BOTTOM INFO: date+time | venue+QR ====== */
+        .bottom-info {
+            display: flex;
+            align-items: stretch;
+            gap: 0.6rem;
+            margin: 0.5rem 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .bottom-left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            min-width: 0;
+        }
+
+        .bottom-right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-width: 0;
+        }
+
+        .info-box {
+            padding: 0.5rem 0.6rem;
+            text-align: center;
+        }
+
+        .info-label {
+            font-family: 'Reem Kufi', serif;
+            font-size: 0.65rem;
+            color: var(--sage-dark);
+            font-weight: 700;
+            margin-bottom: 0.1rem;
+        }
+
+        .info-value {
+            font-family: 'Scheherazade New', serif;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        /* Time emphasis */
+        .time-emphasis {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            background: var(--dusty-pink-light);
+            color: var(--dusty-pink-dark);
+            padding: 0.25rem 0.7rem;
+            border-radius: 20px;
+            font-family: 'Reem Kufi', serif;
+            font-size: 0.75rem;
+            font-weight: 700;
+            border: 1px solid rgba(168, 125, 119, 0.2);
+            animation: subtleGlow 3s ease-in-out infinite;
+        }
+
+        @keyframes subtleGlow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 4px rgba(201, 160, 154, 0.2);
+            }
+
+            50% {
+                box-shadow: 0 0 14px rgba(201, 160, 154, 0.5);
+            }
+        }
+
+        .venue-name {
+            font-family: 'Reem Kufi', serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 0.1rem;
+        }
+
+        .venue-address {
+            font-size: 0.8rem;
+            color: var(--text-soft);
+        }
+
+        /* QR + Link inline */
+        .qr-inline {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+            flex-direction: column;
+        }
+
+        .qr-container {
+            background: white;
+            padding: 4px;
+            border-radius: 8px;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+        }
+
+        .qr-container img {
+            display: block;
+            width: 70px;
+            height: 70px;
+            border-radius: 3px;
+        }
+
+        .qr-label {
+            font-family: 'Reem Kufi', serif;
+            font-size: 0.55rem;
+            color: var(--text-light);
+            margin-top: 0.15rem;
+        }
+
+        .location-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            padding: 0.3rem 0.8rem;
+            background: var(--sage);
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-family: 'Reem Kufi', serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(154, 171, 142, 0.3);
+            margin-top: 0.3rem;
+        }
+
+        .location-btn:hover {
+            background: var(--sage-dark);
+            transform: translateY(-1px);
+        }
+
+        .location-btn svg {
+            width: 12px;
+            height: 12px;
+            fill: white;
+        }
+
+        /* ====== BLESSING (Diwani / decorative style) ====== */
+        .blessing-section {
+            margin: 0.5rem 0 0.3rem;
+            padding: 0.4rem 0.3rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .blessing-text {
+            font-family: 'Aref Ruqaa', serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--text-main);
+            line-height: 2;
+            font-style: italic;
+        }
+
+        .small-ornament {
+            color: var(--dusty-pink);
+            font-size: 1rem;
+            margin: 0.2rem 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .footer {
+            font-family: 'Reem Kufi', serif;
+            font-size: 0.7rem;
+            color: var(--text-light);
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ====== RESPONSIVE ====== */
+        @media (max-width: 480px) {
+            .invitation {
+                padding: 1.2rem 1rem;
+                border-radius: 12px;
+            }
+
+            .dawah-title {
+                font-size: 2.4rem;
+            }
+
+            .couple-name {
+                font-size: 2rem;
+            }
+
+            .ampersand {
+                font-size: 1.8rem;
+            }
+
+            .blessing-text {
+                font-size: 1.15rem;
+            }
+
+            .botanical-tl,
+            .botanical-tr {
+                width: 100px;
+                height: 100px;
+            }
+
+            .botanical-bl,
+            .botanical-br {
+                width: 85px;
+                height: 85px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .couple-name {
+                font-size: 1.7rem;
+            }
+
+            .dawah-title {
+                font-size: 2rem;
+            }
+
+            .names-section {
+                gap: 0.4rem;
+            }
+
+            .info-row {
+                flex-direction: column;
+                gap: 0.4rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="invitation">
+
+        <!-- ====== FLORAL ROSE BACKGROUNDS ====== -->
+        <svg class="bg-floral rose-1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#c9a09a">
+                <ellipse cx="50" cy="40" rx="20" ry="16" opacity="0.6" />
+                <ellipse cx="38" cy="48" rx="18" ry="14" transform="rotate(-30 38 48)" opacity="0.5" />
+                <ellipse cx="62" cy="48" rx="18" ry="14" transform="rotate(30 62 48)" opacity="0.5" />
+                <ellipse cx="44" cy="58" rx="16" ry="12" transform="rotate(-60 44 58)" opacity="0.4" />
+                <ellipse cx="56" cy="58" rx="16" ry="12" transform="rotate(60 56 58)" opacity="0.4" />
+                <circle cx="50" cy="50" r="8" fill="#a87d77" opacity="0.7" />
+            </g>
+            <path d="M50 65 Q48 80 45 95" stroke="#9aab8e" stroke-width="1.5" fill="none" opacity="0.5" />
+            <ellipse cx="40" cy="82" rx="8" ry="4" transform="rotate(-40 40 82)" fill="#c1ceaa" opacity="0.4" />
+        </svg>
+
+        <svg class="bg-floral rose-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#c9a09a">
+                <ellipse cx="50" cy="42" rx="18" ry="14" opacity="0.6" />
+                <ellipse cx="40" cy="50" rx="15" ry="12" transform="rotate(-25 40 50)" opacity="0.5" />
+                <ellipse cx="60" cy="50" rx="15" ry="12" transform="rotate(25 60 50)" opacity="0.5" />
+                <circle cx="50" cy="48" r="7" fill="#a87d77" opacity="0.6" />
+            </g>
+            <path d="M50 62 Q52 75 48 90" stroke="#9aab8e" stroke-width="1" fill="none" opacity="0.4" />
+        </svg>
+
+        <svg class="bg-floral rose-3" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#c1ceaa">
+                <ellipse cx="40" cy="30" rx="14" ry="10" opacity="0.5" />
+                <ellipse cx="34" cy="38" rx="12" ry="9" transform="rotate(-20 34 38)" opacity="0.4" />
+                <ellipse cx="46" cy="38" rx="12" ry="9" transform="rotate(20 46 38)" opacity="0.4" />
+                <circle cx="40" cy="35" r="5" fill="#9aab8e" opacity="0.5" />
+            </g>
+        </svg>
+
+        <svg class="bg-floral rose-4" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#c9a09a" opacity="0.5">
+                <ellipse cx="40" cy="35" rx="12" ry="9" />
+                <ellipse cx="35" cy="42" rx="10" ry="8" transform="rotate(-30 35 42)" />
+                <ellipse cx="45" cy="42" rx="10" ry="8" transform="rotate(30 45 42)" />
+                <circle cx="40" cy="40" r="5" fill="#a87d77" />
+            </g>
+        </svg>
+
+        <svg class="bg-floral rose-5" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#c1ceaa" opacity="0.4">
+                <ellipse cx="40" cy="32" rx="13" ry="10" />
+                <ellipse cx="33" cy="40" rx="11" ry="9" transform="rotate(-25 33 40)" />
+                <ellipse cx="47" cy="40" rx="11" ry="9" transform="rotate(25 47 40)" />
+            </g>
+        </svg>
+
+        <!-- ====== BOTANICAL CORNERS ====== -->
+        <svg class="botanical-tl" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.7">
+                <path d="M10 180 Q30 140 20 100 Q25 80 40 65 Q55 50 50 30" stroke="#9aab8e" stroke-width="1.5"
+                    fill="none" />
+                <path d="M20 100 Q35 95 45 80" stroke="#9aab8e" stroke-width="1" fill="none" />
+                <ellipse cx="42" cy="72" rx="18" ry="8" transform="rotate(-40 42 72)" fill="#c1ceaa" opacity="0.5" />
+                <path d="M40 65 Q50 55 65 50" stroke="#9aab8e" stroke-width="1" fill="none" />
+                <ellipse cx="60" cy="48" rx="15" ry="7" transform="rotate(-30 60 48)" fill="#c1ceaa" opacity="0.4" />
+                <path d="M50 30 Q55 20 70 15" stroke="#9aab8e" stroke-width="1" fill="none" />
+                <ellipse cx="68" cy="14" rx="14" ry="6" transform="rotate(-20 68 14)" fill="#c1ceaa" opacity="0.4" />
+                <circle cx="25" cy="130" r="3" fill="#c9a09a" opacity="0.6" />
+                <circle cx="30" cy="120" r="2.5" fill="#c9a09a" opacity="0.5" />
+                <circle cx="22" cy="115" r="2" fill="#c9a09a" opacity="0.4" />
+                <path d="M10 180 Q0 150 15 130" stroke="#9aab8e" stroke-width="1" fill="none" />
+                <ellipse cx="14" cy="128" rx="12" ry="6" transform="rotate(-70 14 128)" fill="#c1ceaa" opacity="0.3" />
+                <!-- Small rose in corner -->
+                <g fill="#c9a09a" opacity="0.35">
+                    <ellipse cx="55" cy="95" rx="8" ry="6" />
+                    <ellipse cx="51" cy="99" rx="7" ry="5" transform="rotate(-20 51 99)" />
+                    <ellipse cx="59" cy="99" rx="7" ry="5" transform="rotate(20 59 99)" />
+                    <circle cx="55" cy="97" r="3" fill="#a87d77" />
+                </g>
+            </g>
+        </svg>
+
+        <svg class="botanical-tr" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.7">
+                <path d="M10 180 Q30 140 20 100 Q25 80 40 65 Q55 50 50 30" stroke="#9aab8e" stroke-width="1.5"
+                    fill="none" />
+                <path d="M20 100 Q35 95 45 80" stroke="#9aab8e" stroke-width="1" fill="none" />
+                <ellipse cx="42" cy="72" rx="18" ry="8" transform="rotate(-40 42 72)" fill="#c1ceaa" opacity="0.5" />
+                <path d="M40 65 Q50 55 65 50" stroke="#9aab8e" stroke-width="1" fill="none" />
+                <ellipse cx="60" cy="48" rx="15" ry="7" transform="rotate(-30 60 48)" fill="#c1ceaa" opacity="0.4" />
+                <path d="M50 30 Q55 20 70 15" stroke="#9aab8e" stroke-width="1" fill="none" />
+                <ellipse cx="68" cy="14" rx="14" ry="6" transform="rotate(-20 68 14)" fill="#c1ceaa" opacity="0.4" />
+                <circle cx="25" cy="130" r="3" fill="#c9a09a" opacity="0.6" />
+                <circle cx="30" cy="120" r="2.5" fill="#c9a09a" opacity="0.5" />
+                <path d="M10 180 Q0 150 15 130" stroke="#9aab8e" stroke-width="1" fill="none" />
+                <ellipse cx="14" cy="128" rx="12" ry="6" transform="rotate(-70 14 128)" fill="#c1ceaa" opacity="0.3" />
+                <g fill="#c9a09a" opacity="0.35">
+                    <ellipse cx="55" cy="95" rx="8" ry="6" />
+                    <ellipse cx="51" cy="99" rx="7" ry="5" transform="rotate(-20 51 99)" />
+                    <ellipse cx="59" cy="99" rx="7" ry="5" transform="rotate(20 59 99)" />
+                    <circle cx="55" cy="97" r="3" fill="#a87d77" />
+                </g>
+            </g>
+        </svg>
+
+        <svg class="botanical-bl" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.6">
+                <path d="M10 180 Q30 140 20 100 Q25 80 40 65" stroke="#9aab8e" stroke-width="1.5" fill="none" />
+                <ellipse cx="38" cy="63" rx="16" ry="7" transform="rotate(-40 38 63)" fill="#c1ceaa" opacity="0.5" />
+                <circle cx="20" cy="140" r="3" fill="#c9a09a" opacity="0.5" />
+                <circle cx="15" cy="148" r="2" fill="#c9a09a" opacity="0.4" />
+                <path d="M5 185 Q15 155 10 130" stroke="#7a8e6e" stroke-width="1" fill="none" />
+                <ellipse cx="10" cy="135" rx="10" ry="5" transform="rotate(-75 10 135)" fill="#9aab8e" opacity="0.3" />
+                <g fill="#c9a09a" opacity="0.3">
+                    <ellipse cx="45" cy="120" rx="7" ry="5" />
+                    <ellipse cx="42" cy="123" rx="6" ry="4" transform="rotate(-25 42 123)" />
+                    <ellipse cx="48" cy="123" rx="6" ry="4" transform="rotate(25 48 123)" />
+                </g>
+            </g>
+        </svg>
+
+        <svg class="botanical-br" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.6">
+                <path d="M10 180 Q30 140 20 100 Q25 80 40 65" stroke="#9aab8e" stroke-width="1.5" fill="none" />
+                <ellipse cx="38" cy="63" rx="16" ry="7" transform="rotate(-40 38 63)" fill="#c1ceaa" opacity="0.5" />
+                <circle cx="20" cy="140" r="3" fill="#c9a09a" opacity="0.5" />
+                <circle cx="15" cy="148" r="2" fill="#c9a09a" opacity="0.4" />
+                <path d="M5 185 Q15 155 10 130" stroke="#7a8e6e" stroke-width="1" fill="none" />
+                <ellipse cx="10" cy="135" rx="10" ry="5" transform="rotate(-75 10 135)" fill="#9aab8e" opacity="0.3" />
+                <g fill="#c9a09a" opacity="0.3">
+                    <ellipse cx="45" cy="120" rx="7" ry="5" />
+                    <ellipse cx="42" cy="123" rx="6" ry="4" transform="rotate(-25 42 123)" />
+                    <ellipse cx="48" cy="123" rx="6" ry="4" transform="rotate(25 48 123)" />
+                </g>
+            </g>
+        </svg>
+
+        <!-- ====== CONTENT ====== -->
+
+        <h1 class="dawah-title">دعـوة</h1>
+        <div class="bismillah">بسم الله الرحمن الرحيم</div>
+
+
+        <p class="intro-text">بقلوبٍ تغمرها الفرح ونفوسٍ تملؤها السعادة يتشرف</p>
+
+        <div class="divider">
+            <span class="divider-line"></span>
+            <span class="divider-dot"></span>
+            <span class="divider-line"></span>
+        </div>
+
+        <!-- Families -->
+        <div class="families-section">
+            <div class="family">
+                <div class="family-title">أسرة المرحوم</div>
+                <div class="family-name">سعيد فؤاد عبدالرحمن</div>
+            </div>
+            <div class="family">
+                <div class="family-title">أسرة اللواء</div>
+                <div class="family-name">وائل على رمضان</div>
+            </div>
+        </div>
+
+        <p class="invite-line">بدعوتكم لحضور حفل زفاف</p>
+
+        <!-- Names with titles -->
+        <div class="names-section">
+            <span class="couple-name">
+                <span class="couple-title">المهندس</span>
+                أحمد
+            </span>
+            <span class="ampersand">&</span>
+            <span class="couple-name">
+                <span class="couple-title">الدكتورة</span>
+                نرمين
+            </span>
+        </div>
+
+        <p class="mashia">وذلك بمشيئة الله تعالى</p>
+
+        <!-- Bottom info: Date+Time | Venue+QR -->
+        <div class="bottom-info">
+            <!-- Left: Date + Time stacked -->
+            <div class="bottom-left">
+                <div class="info-box">
+                    <div class="info-label">التاريخ</div>
+                    <div class="info-value">الأحد ٢٢ مارس ٢٠٢٦</div>
+                </div>
+                <div class="info-box">
+                    <div class="info-label">الموعد</div>
+                    <div class="time-emphasis">
+                        🕓 الساعة الثالثة عصراً
+                    </div>
+                </div>
+            </div>
+            <!-- Right: Venue + QR -->
+            <div class="bottom-right">
+                <div class="venue-name">Moments Villa</div>
+                <div class="venue-address">اول طريق الأحرار — الزقازيق</div>
+                <div class="qr-container">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://maps.app.goo.gl/9o1w7DkGFxSf8LGCA&color=4a4340&bgcolor=ffffff"
+                        alt="QR Code - موقع القاعة">
+                </div>
+                <a href="https://maps.app.goo.gl/9o1w7DkGFxSf8LGCA" target="_blank" rel="noopener" class="location-btn">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                    </svg>
+                    الموقع على الخريطة
+                </a>
+            </div>
+        </div>
+
+        <div class="small-ornament">✿</div>
+        <div class="footer">في انتظار تشريفكم</div>
+    </div>
+</body>
+
+</html>
