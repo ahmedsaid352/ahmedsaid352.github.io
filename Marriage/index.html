@@ -5,9 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>دعوة زفاف | أحمد و نرمين</title>
-    <meta name="description" content="دعوة لحضور حفل زفاف أحمد سعيد فؤاد و نرمين وائل على - 22 مارس 2026">
+    <meta name="description" content="دعوة لحضور حفل زفاف أحمد سعيد و نرمين وائل - 22 مارس 2026 ">
     <link rel="icon" href="marriage_icon.png">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ahmedsaid352.github.io/Marriage/">
+    <meta property="og:title" content="دعوة زفاف | أحمد و نرمين">
+    <meta property="og:description" content="دعوة لحضور حفل زفاف أحمد سعيد فؤاد و نرمين وائل على - 22 مارس 2026">
+    <meta property="og:image" content="https://ahmedsaid352.github.io/Marriage/marriage_icon.png">
 
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ahmedsaid352.github.io/Marriage/">
+    <meta property="twitter:title" content="دعوة زفاف | أحمد و نرمين">
+    <meta property="twitter:description" content="دعوة لحضور حفل زفاف أحمد سعيد فؤاد و نرمين وائل على - 22 مارس 2026">
+    <meta property="twitter:image" content="https://ahmedsaid352.github.io/Marriage/marriage_icon.png">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -125,6 +137,50 @@
             transform: translateX(-50%) rotate(45deg);
         }
 
+        /* additional scattered roses */
+        .rose-6 {
+            top: 20%;
+            right: 40px;
+            width: 65px;
+            opacity: 0.11;
+            transform: rotate(5deg);
+        }
+
+        .rose-7 {
+            bottom: 25%;
+            left: 20px;
+            width: 55px;
+            opacity: 0.09;
+            transform: rotate(-25deg);
+        }
+
+        /* new flower variety: daisy */
+        .flower-1 {
+            top: 10%;
+            left: 30px;
+            width: 50px;
+            opacity: 0.12;
+            transform: rotate(-10deg);
+        }
+
+        /* new flower from image */
+        .flower-img-1 {
+            top: 15%;
+            left: 50%;
+            width: 75%;
+            opacity: 0.12;
+            transform: translateX(-50%);
+        }
+
+        /* new flower from image */
+        .flower-img-2 {
+            bottom: 30%;
+            left: 40px;
+            width: 60px;
+            opacity: 0.10;
+            transform: rotate(-15deg);
+        }
+
         /* ====== BOTANICAL CORNERS ====== */
         .botanical-tl,
         .botanical-tr,
@@ -139,7 +195,6 @@
             left: -8px;
             width: 120px;
             height: 120px;
-            opacity: 0.55;
         }
 
         .botanical-tr {
@@ -147,7 +202,6 @@
             right: -8px;
             width: 120px;
             height: 120px;
-            opacity: 0.55;
             transform: scaleX(-1);
         }
 
@@ -156,7 +210,6 @@
             left: -8px;
             width: 100px;
             height: 100px;
-            opacity: 0.45;
             transform: scaleY(-1);
         }
 
@@ -165,7 +218,6 @@
             right: -8px;
             width: 100px;
             height: 100px;
-            opacity: 0.45;
             transform: scale(-1, -1);
         }
 
@@ -595,6 +647,29 @@
             </g>
         </svg>
 
+        <!-- extra scattered roses -->
+        <svg class="bg-floral rose-6" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#c9a09a">
+                <ellipse cx="50" cy="40" rx="20" ry="16" opacity="0.6" />
+                <ellipse cx="38" cy="48" rx="18" ry="14" transform="rotate(-30 38 48)" opacity="0.5" />
+                <ellipse cx="62" cy="48" rx="18" ry="14" transform="rotate(30 62 48)" opacity="0.5" />
+                <ellipse cx="44" cy="58" rx="16" ry="12" transform="rotate(-60 44 58)" opacity="0.4" />
+                <circle cx="50" cy="50" r="8" fill="#a87d77" opacity="0.7" />
+            </g>
+        </svg>
+
+        <svg class="bg-floral rose-7" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#c9a09a" opacity="0.5">
+                <ellipse cx="40" cy="35" rx="12" ry="9" />
+                <ellipse cx="35" cy="42" rx="10" ry="8" transform="rotate(-30 35 42)" />
+                <ellipse cx="45" cy="42" rx="10" ry="8" transform="rotate(30 45 42)" />
+                <circle cx="40" cy="40" r="5" fill="#a87d77" />
+            </g>
+        </svg>
+
+        <!-- new flower from image -->
+        <img class="bg-floral flower-img-1" src="fin_9.png" alt="Flower from image">
+
         <!-- ====== BOTANICAL CORNERS ====== -->
         <svg class="botanical-tl" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.7">
@@ -736,7 +811,7 @@
             </div>
             <!-- Right: Venue + QR -->
             <div class="bottom-right">
-                <div class="venue-name">Moments Villa</div>
+                <div class="venue-name">🏰 قاعة Moments Villa</div>
                 <div class="venue-address">اول طريق الأحرار — الزقازيق</div>
                 <div class="qr-container">
                     <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://maps.app.goo.gl/9o1w7DkGFxSf8LGCA&color=4a4340&bgcolor=ffffff"
